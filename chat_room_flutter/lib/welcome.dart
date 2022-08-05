@@ -1,3 +1,6 @@
+import 'package:chat_room_flutter/Login/signUp.dart';
+import 'package:chat_room_flutter/constants/chatScreen.dart';
+import 'package:chat_room_flutter/intro.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -49,7 +52,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 width: 200.0,
                 height: 40.0,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) {
+                        return chatScreen();
+                      }),
+                    );
+                  },
                   child: Text(
                     'Sign In',
                     style:
@@ -67,7 +77,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 width: 200.0,
                 height: 40.0,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) {
+                        return introSlide();
+                      }),
+                    );
+                  },
                   child: Text(
                     'Sign Up',
                     style:
