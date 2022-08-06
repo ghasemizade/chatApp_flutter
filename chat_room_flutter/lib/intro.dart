@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:intro_slider/intro_slider.dart';
 
 class introSlide extends StatefulWidget {
@@ -20,7 +19,9 @@ class _introSlideState extends State<introSlide> {
       Slide(
         title: "Hello",
         description: "welcome to chat",
-        pathImage: "Images/logo3.png",
+        pathImage: "Images/Logo.png",
+        widthImage: 400.0,
+        heightImage: 300.0,
         backgroundColor: Color.fromARGB(255, 173, 127, 251),
       ),
     );
@@ -28,14 +29,16 @@ class _introSlideState extends State<introSlide> {
       Slide(
         title: "send message",
         description: "Send a message to people close to you",
-        pathImage: "Images/logo1.png",
+        pathImage: "Images/welcome_image.png",
+        widthImage: 500.0,
+        heightImage: 400.0,
         backgroundColor: Color.fromARGB(255, 173, 127, 251),
       ),
     );
     slides.add(
       Slide(
         title: "get Started",
-        pathImage: "Images/logo2.png",
+        pathImage: "Images/Hosein_Avatar.png",
         backgroundColor: Color.fromARGB(255, 173, 127, 251),
       ),
     );

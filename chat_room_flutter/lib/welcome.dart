@@ -1,4 +1,3 @@
-import 'package:chat_room_flutter/Login/signUp.dart';
 import 'package:chat_room_flutter/constants/chatScreen.dart';
 import 'package:chat_room_flutter/intro.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +20,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [HexColor("#f594b8"), HexColor("#AD7FFB")]),
+              colors: [HexColor("#f594b8"), HexColor("#AD7FFB"),],),
         ),
         child: Center(
           child: Column(
@@ -41,7 +40,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 height: 50.0,
               ),
               Image(
-                image: AssetImage("Images/logo.png"),
+                image: AssetImage("Images/Logo.png"),
                 height: 250,
                 width: 250,
               ),
